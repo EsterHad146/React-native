@@ -1,3 +1,5 @@
+import { Text, View, Image } from 'react-native';
+
 class App extends Component {
   render(){
     let nome = "Jarvis";
