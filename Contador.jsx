@@ -21,13 +21,11 @@ class App extends Component {
         this.setState({ contador: this.state.contador + n });
     };
 
-
-
     render() {
         return (
-            <View style={{ padding: 50 }}>
-                <View> {/*  style={styles.container} */}
-                    <Text>Você clicou {this.state.contador} vezes</Text>
+            <View style={styles.container}>
+                <View >
+                    <Text style={styles.text}>Você clicou {this.state.contador} vezes</Text>
                 </View>
 
                 {/* <TouchableOpacity onPress={this.aumentarClique}>
@@ -37,16 +35,52 @@ class App extends Component {
                     <Text>Subtrair (-)</Text>
                 </TouchableOpacity> */}
 
-                {/* MODO SIMPLIFICADO */}
-                <TouchableOpacity onPress={()=>this.contarClique (1)}>
-                    <Text>Somar (+)</Text>
+              <View style={styles.containerButton}>
+                  {/* MODO SIMPLIFICADO */}
+                  <TouchableOpacity 
+                    onPress={()=>this.contarClique (1)} 
+                    style={styles.button}>
+                        <Text style={styles.textButton}>Somar (+)</Text>
                 </TouchableOpacity>
-                <TouchableOpacity onPress={()=>this.contarClique (-1)}>
-                    <Text>Subtrair (-)</Text>
+                <TouchableOpacity 
+                    onPress={()=>this.contarClique (-1)}
+                    style={styles.button}>
+                        <Text style={styles.textButton}>Subtrair (-)</Text>
                 </TouchableOpacity>
+              </View>
             </View>
         )
     }
 
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'#B6C4CA'           
+    },
+    text:{
+        fontSize:20,
+        color:'#954650',
+        fontStyle:'italic'
+    },
+    button:{
+        backgroundColor:'#A89294',
+        borderRadius:10,
+        padding:10,
+        marginBottom:10,
+        marginTop:5, 
+        margin:5      
+    },
+    textButton:{
+        fontSize:20,
+        color:'#DDD7D7'
+    },
+    containerButton:{
+        flexDirection:'row'
+    }
+})
 export default App
+
