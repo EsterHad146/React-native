@@ -14,13 +14,13 @@ class App extends Component{
       alert('Digite seu nome!')
       return;
     }
-    this.setState({nome:'Bem-vindo: ' + this.state.input});
+    this.setState({nome:'Bem-vindo: ' + this.state.input + '!'});
   }
 
   render(){
     return(
       <View style={styles.container}>
-        <TextInput style={styles.text} 
+        <TextInput style={styles.input} 
           placeholder="Digite seu nome: "
           underlineColorAndroid="transparent"
           onChangeText={(texto) => this.setState({input:texto})}
@@ -28,7 +28,7 @@ class App extends Component{
         <Button style={styles.input}
           title="Entrar" 
           onPress={this.entrar}/>
-        <Text>{this.state.nome}</Text>
+        <Text style={styles.text}>{this.state.nome}</Text>
 
       </View>
     )
@@ -39,21 +39,28 @@ const styles = StyleSheet.create({
     container:{
       flex:1,
       alignItems:"center",
-      justifyContent:"center"
+      justifyContent:"center",
+      backgroundColor:"#0D8A9E"
       
     },
     text:{
       fontSize:20,
+      color:"#E5F9F8",
+      fontStyle:'italic',
+      fontFamily:'Verdana',
+      marginTop:40
     },
     input:{
+      color:'#1F282D',
       height:45,
       borderWidth:3,
-      borderColor:'#000',
-      marginTop:50,
-      margin:10,
-      fontSize:15,
-      padding:10
+      borderColor:'#E5F9F8',
+      marginBottom:10,
+      fontSize:20,
+      padding:10,
+      borderRadius:10
     }
 })
 
 export default App;
+
