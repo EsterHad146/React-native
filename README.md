@@ -6,5 +6,8 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 
 -npx create-expo-app@latest *nomeDoArquivo* --template <br>
 -Blank (TypeScript) - blank app with TypeScript enabled <br>
--npx expo start
+-npx expo start <br>
+
+***MODELO PRONTO***
+
 [templatePadrao.txt](https://github.com/user-attachments/files/18662419/templatePadrao.txt)
