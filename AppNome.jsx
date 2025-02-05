@@ -32,9 +32,8 @@ App = () => {
   //RESGATAR O ÚLTIMO REGISTRO
   useEffect(()=>{
     obterNome = async () =>{
-      const getNome = await AsyncStorage.getItem('ultimoNome', nome);}
+      const getNome = await AsyncStorage.getItem('ultimoNome');}
       if (getNome) {
-        console.log(getNome)
         setNome(getNome)
       }
       obterNome();
