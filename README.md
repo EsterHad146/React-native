@@ -2,7 +2,7 @@
 Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-windows/ <br>
 *manter o autosave do VS Code desabilitado* <br>
 
-***TUTORIAL***
+***TUTORIAIS***
 
 -npx create-expo-app@latest *nomeDoArquivo* --template <br>
 -Blank (TypeScript) - blank app with TypeScript enabled <br>
@@ -12,6 +12,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 
 -Contexto da área segura do React Native: https://docs.expo.dev/versions/latest/sdk/safe-area-context/#components <br>
 -Armazenamento assíncrono: https://docs.expo.dev/versions/latest/sdk/async-storage/ <br>
+-uso da biblioteca assíncrona: https://react-native-async-storage.github.io/async-storage/docs/usage/ <br>
 
 ***MODELO PRONTO***
 
