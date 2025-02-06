@@ -13,6 +13,8 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 -Contexto da área segura do React Native: https://docs.expo.dev/versions/latest/sdk/safe-area-context/#components <br>
 -Armazenamento assíncrono: https://docs.expo.dev/versions/latest/sdk/async-storage/ <br>
 -uso da biblioteca assíncrona: https://react-native-async-storage.github.io/async-storage/docs/usage/ <br>
+-Slider: https://docs.expo.dev/versions/latest/sdk/slider/ <br>
+-Picker: https://github.com/callstack/react-native-slider#installation--usage <br>
 
 ***MODELO PRONTO***
 
