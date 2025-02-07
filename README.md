@@ -5,7 +5,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 ***TUTORIAIS***
 
 -npx create-expo-app@latest *nomeDoArquivo* --template <br>
--Blank (TypeScript) - blank app with TypeScript enabled <br>
+-Blank (TypeScript) - blank app with TypeScript enabled ou Blank(Padrão mais utilizado) <br>
 -npx expo start <br>
 -npm install react-native-safe-area-context <br>
 
