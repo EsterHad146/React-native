@@ -11,7 +11,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 
 ***BIBLIOTECAS***
 
--Contexto da área segura do React Native: https://docs.expo.dev/versions/latest/sdk/safe-area-context/#components <br>
+-SafeAreaView: Contexto da área segura do React Native: https://docs.expo.dev/versions/latest/sdk/safe-area-context/#components <br>
 -Armazenamento assíncrono: https://docs.expo.dev/versions/latest/sdk/async-storage/ <br>
 -uso da biblioteca assíncrona: https://react-native-async-storage.github.io/async-storage/docs/usage/ <br>
 -Slider: https://docs.expo.dev/versions/latest/sdk/slider/ <br>
