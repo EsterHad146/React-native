@@ -8,6 +8,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 -Blank (TypeScript) - blank app with TypeScript enabled ou Blank(Padrão mais utilizado) <br>
 -npx expo start <br>
 -npm install react-native-safe-area-context <br>
+-expo install axios <br>
 
 ***BIBLIOTECAS***
 
