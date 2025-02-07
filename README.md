@@ -17,6 +17,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 -uso da biblioteca assíncrona: https://react-native-async-storage.github.io/async-storage/docs/usage/ <br>
 -Slider: https://docs.expo.dev/versions/latest/sdk/slider/ <br>
 -Picker: https://github.com/callstack/react-native-slider#installation--usage / https://www.npmjs.com/package/react-native-dropdown-picker <br>
+-Keyborad: https://docs.expo.dev/guides/keyboard-handling/#keyboard-events <br>
 
 ***MODELO PRONTO***
 
