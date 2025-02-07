@@ -1,0 +1,13 @@
+   // const [botao, setBotao] = useState(true) Minha Tentativa
+   //setBotao(false); // Oculta o botão após a busca. Minha Tentativa
+  // const botaoPressionado = () => { 
+  //   // Lógica do evento
+  //   console.log('Botão pressionado!');
+  //   setBotao(false);
+  // };Minha Tentativa
+ {/* {botao &&(
+        <TouchableOpacity style={styles.button}
+        onPress={buscarEndereco}>
+        <Text style={styles.buttonText}>Buscar</Text>
+      </TouchableOpacity>
+      )} Minha Tentativa*/}
