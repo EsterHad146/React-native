@@ -1,0 +1,61 @@
+import React, { useState, useRef } from 'react';
+import { StyleSheet, Text, TouchableOpacity, TextInput, View, Keyboard, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import buscarDadosPorCnpj from './src/funcaoDeBusca';
+
+export default function App() {
+  // ... (outras declarações de estado)
+
+  const buscarInformacaoes = async () => {
+    // ... (validação e tratamento de erros)
+
+    try {
+      const dadosCnpj = await buscarDadosPorCnpj(cnpj);
+      if (dadosCnpj) {
+        // ... (atualizar outros estados)
+
+        // Montar o objeto endereco sem alterar sua estrutura
+        setEndereco({
+          tipo_logradouro: dadosCnpj.tipo_logradouro || '',
+          logradouro: dadosCnpj.logradouro || '',
+          numero: dadosCnpj.numero || '',
+          bairro: dadosCnpj.bairro || '',
+          municipio: dadosCnpj.municipio || '',
+          uf: dadosCnpj.uf || '',
+          cep: dadosCnpj.cep || ''
+        });
+      } else {
+        // ... (tratar erro de CNPJ não encontrado)
+      }
+    } catch (error) {
+      // ... (tratar erro na requisição)
+    }
+  };
+
+  // ... (função limparInformacaoes)
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        {/* ... (input e botões) */}
+
+        {error && <Text style={styles.errorText}>{error}</Text>}
+
+        {/* Exibir os resultados se o objeto endereco não estiver vazio */}
+        {endereco && Object.keys(endereco).length > 0 && (
+          <View style={styles.result}>
+            <Text style={styles.resultText}>Razão Social: {razaoSocial}</Text>
+            <Text style={styles.resultText}>Nome Fantasia: {nomeFantasia}</Text>
+            <Text style={styles.resultText}>
+              Endereço: {endereco.tipo_logradouro} {endereco.logradouro}, {endereco.numero} - {endereco.bairro}, {endereco.municipio} - {endereco.uf} {endereco.cep}
+            </Text>
+            <Text style={styles.resultText}>Telefone: {fone}</Text>
+            <Text style={styles.resultText}>Email: {email}</Text>
+          </View>
+        )}
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+// ... (estilos)
