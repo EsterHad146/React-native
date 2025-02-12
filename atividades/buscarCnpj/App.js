@@ -8,7 +8,7 @@ export default function App() {
   const [cnpj, setCnpj] = useState('');
   const [razaoSocial, setRazaoSocial] = useState('');
   const [nomeFantasia, setNomeFantasia] = useState('');
-  const [endereco, setEndereco] = useState('');
+  const [endereco, setEndereco] = useState(null);
   const [fone, setFone] = useState('');
   const [email, setEmail] = useState('');
   const [error, setError] = useState(null); 
@@ -21,8 +21,10 @@ export default function App() {
       if (dadosCnpj) { 
         setRazaoSocial(dadosCnpj.razao_social || ''); 
         setNomeFantasia(dadosCnpj.nome_fantasia || '');
-        setEndereco(dadosCnpj.endereco || '');
-        setFone(dadosCnpj.fone || '');
+        setEndereco(dadosCnpj.endereco.logradouro || '');
+        setEndereco(dadosCnpj.endereco.numero || '');
+        setEndereco(dadosCnpj.endereco.bairro || '');
+        setFone(dadosCnpj.telefone1 || '');
         setEmail(dadosCnpj.email || '');
       } else {
         setError("CNPJ não encontrado ou dados inválidos.");
@@ -56,7 +58,6 @@ export default function App() {
         keyboardType='numeric'
         ref={inputRef} 
       />
-
       <View style={styles.areaButton}>
         <TouchableOpacity style={styles.button} onPress={buscarInformacaoes}>
           <Text style={styles.buttonText}>Buscar</Text>
