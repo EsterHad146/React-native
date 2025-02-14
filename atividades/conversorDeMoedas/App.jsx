@@ -18,18 +18,23 @@ export default App = () => {
   useEffect(()=>{
     const obterMoedas = async () =>{
       let dados = await buscarMoedas();
-      dados = [dados.URD.code, dados.EUR.code, dados.BTC.code]
-      console.log(dados)
-      //setMoedas(dados)
+      //dados = [dados.URD.code, dados.EUR.code, dados.BTC.code]
+      
+      setMoedas(Object.keys(dados))
     }
     obterMoedas();
   },[])
 
   const converterValor= async()=>{
-
+    const taxa = await buscarTaxaCambio(moeda);
+    setTaxaCambio(taxa)
+    setValorConvertido(valor/taxa);
   }
   const limparTela= async()=>{
-
+    setMoedas('')
+    setMoeda('USD')
+    setTaxaCambio(null)
+    setValorConvertido(null)
   }
   return (
     <View style={styles.container}>
@@ -58,6 +63,14 @@ export default App = () => {
         onPress={limparTela}>
         <Text style={styles.buttonText}>Limpar</Text>
       </TouchableOpacity>
+
+      {taxaCambio && (
+        <View style={styles.result}>
+          <Text style={styles.resultText}>Taxa de câmbio R$:{parseFloat(taxaCambio).toFixed(2)}</Text>
+          <Text style={styles.resultText}>Valor Convertido:{parseFloat(valorConvertido).toFixed(2)}</Text>
+        </View>
+
+      )}
     </View>
   )
 }
