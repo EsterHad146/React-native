@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Text, View} from "react-native";
+import {Text, View, TouchableOpacity} from "react-native";
 import styles from "./style";
 
 class Titulo extends Component{
@@ -11,4 +11,19 @@ class Titulo extends Component{
         )
     }
 }
-export default Titulo
+
+class Botao extends Component{
+    render(){
+        const {text, clicado}= this.props
+        return(
+            <View>
+               <TouchableOpacity style={styles.button} onPress={clicado}>activeOpacity={0.8}
+                <Text>{text}</Text>
+               </TouchableOpacity>
+            </View>
+        )
+    }
+}
+export default {Titulo, Botao}
+
+
