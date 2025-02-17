@@ -1,8 +1,18 @@
 import React from "react";
-import Titulo from "./src/componentes";
+import {Titulo,Botao} from "./src/componentes";
+import {View} from 'react-native'
 
-const Titulo1 = () => {
-  return <Titulo text="Boas Vindas"/>
+const App = () => {
+  const funcaoClicque =()=>{
+    alert('O botão foi clicado')
+  }
+  return(
+    <View>
+       <Titulo text="Boas Vindas"/>
+       <Botao text="Clique Aqui" onPress={funcaoClicque}/>
+
+    </View>
+  )
 }
 
-export default Titulo1
+export default App
