@@ -9,11 +9,13 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 -npx expo start <br>
 -npm install react-native-safe-area-context <br>
 -expo install axios <br>
+-Depedências: npx expo install react-native-screens react-native-safe-area-context <br>
+-Depedências Empilhamento de páginas: npm install @react-navigation/native-stack <br>
 -Navegação: https://reactnavigation.org/ <br>
 
 ***BIBLIOTECAS***
 <br>
--Icons: https://icons.expo.fyi/Index
+-Icons: https://icons.expo.fyi/Index <br>
 -SafeAreaView: Contexto da área segura do React Native: https://docs.expo.dev/versions/latest/sdk/safe-area-context/#components <br>
 -Armazenamento assíncrono: https://docs.expo.dev/versions/latest/sdk/async-storage/ <br>
 -uso da biblioteca assíncrona: https://react-native-async-storage.github.io/async-storage/docs/usage/ <br>
