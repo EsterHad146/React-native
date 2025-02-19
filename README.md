@@ -11,7 +11,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 -expo install axios <br>
 
 ***BIBLIOTECAS***
-
+-Icons: https://icons.expo.fyi/Index
 -SafeAreaView: Contexto da área segura do React Native: https://docs.expo.dev/versions/latest/sdk/safe-area-context/#components <br>
 -Armazenamento assíncrono: https://docs.expo.dev/versions/latest/sdk/async-storage/ <br>
 -uso da biblioteca assíncrona: https://react-native-async-storage.github.io/async-storage/docs/usage/ <br>
