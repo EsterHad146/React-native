@@ -9,6 +9,7 @@ Configurando o ambiente do windows: https://sujeitoprogramador.com/ambiente-wind
 -npx expo start <br>
 -npm install react-native-safe-area-context <br>
 -expo install axios <br>
+-Navegação: https://reactnavigation.org/ <br>
 
 ***BIBLIOTECAS***
 <br>
