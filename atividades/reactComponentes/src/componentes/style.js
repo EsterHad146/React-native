@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
         marginVertical: 40,
         color:'#222'
     },
+    input: {
+        height: 45,
+        borderWidth: 1,
+        marginTop: 10,
+        borderRadius: 5
+      },
     button:{
         backgroundColor:'#4A90E2',
         paddingVertical:12,
