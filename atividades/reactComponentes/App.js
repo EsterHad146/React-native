@@ -1,18 +1,45 @@
-import React from "react";
-import {Titulo,Botao} from "./src/componentes";
-import {View} from 'react-native'
+import React, { useState } from "react";
+import { 
+  Titulo,
+  CaixaTexto, 
+  Botao, 
+  Container, 
+  CaixaSelecao, 
+  ControleDeslizante, 
+  AlternarEstudante 
+} from "./src/componentes";
 
-const App = () => {
-  const funcaoClicque =()=>{
-    alert('O botão foi clicado')
-  }
-  return(
-    <View>
-       <Titulo text="Boas Vindas"/>
-       <Botao text="Clique Aqui" onPress={funcaoClicque}/>
+export default function App() {
+  // Estados para os componentes
+  const [moeda, setMoeda] = useState("USD");
+  const moedasDisponiveis = ["USD", "EUR", "BRL", "GBP"];
 
-    </View>
-  )
+  const [limite, setLimite] = useState(250); // Estado para o Slider
+  const [estudante, setEstudante] = useState(false); // Estado para o Switch
+
+  // Função chamada ao clicar no botão
+  const funcaoClique = () => {
+    alert("O botão foi clicado");
+  };
+
+  return (
+    <Container>
+      <Titulo text="Boas Vindas" />
+      <CaixaTexto/>
+      <Botao text="Clique Aqui" onPress={funcaoClique} />
+
+      {/* Caixa de seleção de moedas */}
+      <CaixaSelecao
+        moedas={moedasDisponiveis}
+        moedaSelecionada={moeda}
+        onChangeMoeda={setMoeda} 
+      />
+
+      {/* Controle Deslizante (Slider) */}
+      <ControleDeslizante valorInicial={limite} />
+
+      {/* Alternância (Switch) */}
+      <AlternarEstudante valorInicial={estudante} />
+    </Container>
+  );
 }
-
-export default App
