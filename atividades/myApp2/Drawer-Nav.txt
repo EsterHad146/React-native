@@ -1,0 +1,38 @@
+CRIANDO PROJETO COM EXPO
+npx create-expo-app app0x -t
+
+NAVEGAÇÃO
+https://reactnavigation.org/
+
+https://reactnavigation.org/docs/getting-started
+
+	npx expo install @react-navigation/native
+	
+	npx expo install react-native-screens react-native-safe-area-context
+
+DRAWER NAVIGATION
+
+https://reactnavigation.org/docs/drawer-navigator
+
+	npx expo install @react-navigation/drawer
+
+	npx expo install react-native-gesture-handler react-native-reanimated
+
+	https://docs.swmansion.com/react-native-reanimated/
+
+	https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/#step-2-add-reanimateds-babel-plugin
+
+		Add Reanimated's babel plugin
+		Add react-native-reanimated/plugin plugin to your babel.config.js.
+
+		  module.exports = {
+    			presets: [
+      			... // don't add it here :)
+    			],
+    			plugins: [
+      			'react-native-reanimated/plugin',
+    			],
+  		  };
+
+npx expo start
+
