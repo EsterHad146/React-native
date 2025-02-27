@@ -13,6 +13,15 @@ export default function Routes(){
         <Drawer.Navigator
             screenOptions = {{
                 //headerShown: false
+                drawerStyle: {
+                    backgroundColor:'#121212'
+                },
+
+                drawerActiveBackgroundColor:'#3B3DBF',
+                drawerActiveTintColor:'#FFF',
+
+                drawerInactiveBackgroundColor:'#CCC',
+                drawerInactiveTintColor:'#000'
             }}
         >
             <Drawer.Screen
