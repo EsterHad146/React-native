@@ -1,0 +1,67 @@
+Resumo do Conteúdo
+O vídeo apresenta um conjunto de perguntas que um entrevistador, Lucas Garcez, faz para candidatos a vagas de React Native, baseadas em sua experiência prática. Ele critica as listas de perguntas genéricas disponíveis online, destacando a importância de respostas autênticas e contextuais. As perguntas abordam desde a experiência do candidato com React Native, diferenças entre desenvolvimento nativo e React Native, até questões técnicas mais profundas como gerenciamento de estado, arquitetura de aplicações e testes. Lucas também enfatiza a importância de entender o funcionamento interno do React Native e de ser capaz de explicar conceitos de forma clara.
+
+Notas e Justificativas
+Conte sua Experiência com React Native
+Nota: 8/10
+Justificativa: A pergunta é fundamental para entender o histórico do candidato, mas a resposta pode ser muito variável dependendo da experiência. É importante que o candidato destaque projetos relevantes e tecnologias utilizadas.
+
+Qual a Diferença entre Native e React Native?
+Nota: 9/10
+Justificativa: Esta é uma pergunta técnica crucial que avalia o entendimento do candidato sobre a arquitetura e as implicações de uso das duas abordagens. Um candidato deve ser capaz de discutir tanto os aspectos técnicos quanto os de negócios.
+
+Uso de Xcode e Android Studio
+Nota: 7/10
+Justificativa: A familiaridade com essas ferramentas é importante, mas muitos desenvolvedores React Native podem não ter experiência profunda com elas, dependendo de suas funções anteriores.
+
+Como o Componente React Native vira nativo?
+Nota: 8/10
+Justificativa: A resposta a essa pergunta demonstra um entendimento mais profundo da arquitetura do React Native. O conhecimento sobre a bridge é importante, mas pode ser uma área que candidatos menos experientes não dominam.
+
+Pra que serve uma FlatList?
+Nota: 8/10
+Justificativa: A utilização correta de FlatList é um ponto importante para performance em React Native. Candidatos devem demonstrar conhecimento prático em otimização.
+
+Qual a diferença entre FlatList e ScrollView?
+Nota: 8/10
+Justificativa: Essa pergunta é importante para entender a experiência do candidato em situações práticas de desenvolvimento.
+
+Como otimizar uma FlatList?
+Nota: 7/10
+Justificativa: Embora existam várias maneiras de otimizar uma FlatList, muitos candidatos podem não lembrar todos os métodos, mas devem saber que a otimização é necessária.
+
+Como separar responsabilidades no React Native? (Arquitetura)
+Nota: 9/10
+Justificativa: Essa pergunta exige que o candidato pense criticamente sobre design de software e arquitetura, algo que é vital para posições mais sêniores.
+
+Quais ferramentas e tipos de teste existem no React Native?
+Nota: 8/10
+Justificativa: A capacidade de discutir diferentes tipos de testes e suas implementações é essencial, especialmente em ambientes onde a qualidade do software é priorizada.
+
+Como utilizar cobertura de código (testes)?
+Nota: 7/10
+Justificativa: A compreensão sobre cobertura de testes é importante, mas pode ser um conceito nebuloso para alguns candidatos, especialmente os mais novos.
+
+Como testar um formulário?
+Nota: 8/10
+Justificativa: Testar formulários é uma parte essencial do desenvolvimento e deve ser abordado com clareza sobre como isso é feito na prática.
+
+O que é uma useCallback?
+Nota: 9/10
+Justificativa: A compreensão de hooks como useCallback é vital para otimização em React, e candidatos devem ser capazes de explicar isso claramente.
+
+Porque cachear uma função com useCallback?
+Nota: 9/10
+Justificativa: Uma resposta sólida demonstra um entendimento avançado do React e de performance, que é crucial para desenvolvedores experientes.
+
+Quais recursos você utiliza para estados globais?
+Nota: 8/10
+Justificativa: A gestão de estado em aplicações React é uma habilidade fundamental, e candidatos devem ser capazes de discutir várias abordagens.
+
+Quais ferramentas de debug você utiliza?
+Nota: 7/10
+Justificativa: A experiência prática com ferramentas de depuração é importante, mas muitos candidatos podem não ter uma variedade de ferramentas em seu arsenal.
+
+Sua experiência com publicação e CI/CD
+Nota: 8/10
+Justificativa: Publicação e integração contínua são aspectos importantes do ciclo de vida do desenvolvimento, e candidatos devem ter alguma experiência nesse sentido.
